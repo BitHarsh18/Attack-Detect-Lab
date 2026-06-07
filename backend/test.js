@@ -1,21 +1,40 @@
-const enrichIOC = require("./src/services/iocEnrichmentService");
+const dotenv = require("dotenv");
+const connectDB = require("./src/config/db");
+const syncFeed = require("./src/services/feedSyncService");
 
-const ioc = {
-  value: "185.220.101.45",
-  type: "ip",
-  severity: "medium",
-  source: "abuse.ch",
+dotenv.config();
 
-  toObject() {
-    return {
-      value: this.value,
-      type: this.type,
-      severity: this.severity,
-      source: this.source
-    };
+const fakeFeed = [
+  {
+    value: "192.168.1.100",
+    type: "ip",
+    severity: "high",
+    source: "testFeed"
+  },
+
+  {
+    value: "evil-domain.com",
+    type: "domain",
+    severity: "critical",
+    source: "testFeed"
+  },
+
+  {
+    value: "185.220.101.45",
+    type: "ip",
+    severity: "high",
+    source: "testFeed"
   }
-};
+];
 
-const result = enrichIOC(ioc);
+(async () => {
 
-console.log(result);
+  await connectDB();
+
+  const result = await syncFeed(fakeFeed);
+
+  console.log(result);
+
+  process.exit();
+
+})();
