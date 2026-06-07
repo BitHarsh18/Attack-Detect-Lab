@@ -12,4 +12,6 @@ router.get("/", controller.getIOCs);
 
 router.get("/search/:value", controller.searchIOC);
 
+router.get("/stats", controller.getIOCStats);
+
 module.exports = router;

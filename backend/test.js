@@ -1,12 +1,21 @@
-const fetchURLHausFeed = require("./src/feeds/urlhausFeed");
+const enrichIOC = require("./src/services/iocEnrichmentService");
 
-(async () => {
-  try {
-    const data = await fetchURLHausFeed();
+const ioc = {
+  value: "185.220.101.45",
+  type: "ip",
+  severity: "medium",
+  source: "abuse.ch",
 
-    console.log("Feed Response:");
-    console.log(data);
-  } catch (err) {
-    console.error(err);
+  toObject() {
+    return {
+      value: this.value,
+      type: this.type,
+      severity: this.severity,
+      source: this.source
+    };
   }
-})();
+};
+
+const result = enrichIOC(ioc);
+
+console.log(result);
