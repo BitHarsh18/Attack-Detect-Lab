@@ -1,18 +1,43 @@
 const axios = require("axios");
 
 const fetchURLHausFeed = async () => {
+
   try {
+
     console.log("Fetching URLHaus Feed...");
 
-    const response = await axios.post(
-      "https://urlhaus-api.abuse.ch/v1/urls/recent/"
+    const response = await axios.get(
+      "https://urlhaus.abuse.ch/downloads/json_recent/"
     );
 
-    return response.data;
+    const data = response.data;
+
+    const feed = [];
+
+    for (const key in data) {
+
+      const item = data[key][0];
+
+      feed.push({
+        value: item.url,
+        type: "url",
+        threatType: item.threat || "malware",
+        source: "URLHaus",
+        severity: "critical"
+      });
+
+    }
+
+    return feed;
+
   } catch (error) {
-  console.error("Status:", error.response?.status);
-  console.error("Data:", error.response?.data);
-}
+
+    console.error(error.message);
+
+    return [];
+
+  }
+
 };
 
 module.exports = fetchURLHausFeed;

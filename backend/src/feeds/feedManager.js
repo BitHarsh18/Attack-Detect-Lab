@@ -3,21 +3,31 @@
 // Store them
 
 const fetchURLHausFeed = require("./urlhausFeed");
+const syncFeed = require("../services/feedSyncService");
 
 const syncAllFeeds = async () => {
+
   console.log("========== Feed Manager ==========");
 
   try {
+
     const urlhausData = await fetchURLHausFeed();
+
+    console.log(`Fetched ${urlhausData.length} indicators`);
+
+    const result = await syncFeed(urlhausData);
 
     console.log("URLHaus Feed Status: Success");
 
     return {
       success: true,
       source: "URLHaus",
-      data: urlhausData
+      inserted: result.inserted,
+      skipped: result.skipped
     };
+
   } catch (error) {
+
     console.log("URLHaus Feed Status: Failed");
 
     return {
@@ -25,7 +35,9 @@ const syncAllFeeds = async () => {
       source: "URLHaus",
       error: error.message
     };
+
   }
+
 };
 
 module.exports = syncAllFeeds;

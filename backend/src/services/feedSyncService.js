@@ -1,7 +1,7 @@
 const IOC = require("../models/IOC");
 
 const syncFeed = async (feedData) => {
-
+noe 
   let inserted = 0;
   let skipped = 0;
 

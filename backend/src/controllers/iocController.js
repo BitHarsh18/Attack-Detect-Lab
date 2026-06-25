@@ -169,6 +169,83 @@ const deleteIOC = async (req, res) => {
 
   }
 };
+const getCriticalIOCs = async (req, res) => {
+
+  try {
+
+    const iocs = await IOC.find({
+      severity: "critical"
+    });
+
+    res.status(200).json({
+      success: true,
+      count: iocs.length,
+      data: iocs
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+
+  }
+
+};
+
+const getIOCsBySource = async (req, res) => {
+
+  try {
+
+    const { source } = req.params;
+
+    const iocs = await IOC.find({
+      source: source
+    });
+
+    res.status(200).json({
+      success: true,
+      count: iocs.length,
+      data: iocs
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+
+  }
+
+};
+const getIOCsByType = async (req, res) => {
+
+  try {
+
+    const { type } = req.params;
+
+    const iocs = await IOC.find({
+      type: type
+    });
+
+    res.status(200).json({
+      success: true,
+      count: iocs.length,
+      data: iocs
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+
+  }
+
+};
 
 module.exports = {
   createIOC,
@@ -176,5 +253,8 @@ module.exports = {
   searchIOC,
   getIOCStats,
   deleteIOC,
-  getRecentIOCs
+  getRecentIOCs,
+  getCriticalIOCs,
+  getIOCsBySource,
+  getIOCsByType
 };
