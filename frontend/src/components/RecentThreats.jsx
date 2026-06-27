@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import api from "../services/api";
 import SeverityBadge from "./SeverityBadge";
 import RiskLevelBadge from "./RiskLevelBadge";
+import { Link } from "react-router-dom";
 
 function RecentThreats() {
 
@@ -137,9 +138,14 @@ function RecentThreats() {
                 className="border-b hover:bg-blue-50 transition-colors duration-200"
               >
 
-                <td className="p-3 break-all font-medium">
+                <td className="p-3 break-all">
 
-                  {ioc.value}
+                  <Link
+                    to={`/ioc/${ioc._id}`}
+                    className="font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >
+                    {ioc.value}
+                  </Link>
 
                 </td>
 

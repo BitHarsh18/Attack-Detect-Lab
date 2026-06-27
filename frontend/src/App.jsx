@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Search from "./pages/Search";
 import ThreatFeeds from "./pages/ThreatFeeds";
 import Analytics from "./pages/Analytics";
+import IOCDetails from "./pages/IOCDetails";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         path="/analytics"
         element={<Analytics />}
       />
+      <Route path="/ioc/:id" element={<IOCDetails />} />
 
     </Routes>
 
