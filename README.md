@@ -385,6 +385,4 @@ This project helped me understand:
 
 GitHub: https://github.com/BitHarsh18
 
-LinkedIn: *(Add your LinkedIn profile here)*
-
 ---
