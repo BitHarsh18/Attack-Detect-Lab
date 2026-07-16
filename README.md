@@ -334,11 +334,23 @@ MONGO_URI=your_mongodb_connection_string
 # 📸 Screenshots
 
 - Dashboard
+  <img width="1898" height="953" alt="image" src="https://github.com/user-attachments/assets/a66068b1-7837-4d17-ab45-70592b80ceed" />
+
 - IOC Search
-- Threat Analytics
+  <img width="1658" height="525" alt="image" src="https://github.com/user-attachments/assets/47ab7d29-5921-4c1b-80f3-912d692db8e7" />
+  
 - Threat Feed Status
+  <img width="1647" height="953" alt="image" src="https://github.com/user-attachments/assets/541220d2-b8be-4344-9ab9-592924ea5ccf" />
+
 - Feed Synchronization
+  <img width="1322" height="455" alt="image" src="https://github.com/user-attachments/assets/17f800fe-48ed-43c7-9efb-eae9d4800afa" />
+
 - Feed History
+  <img width="1605" height="805" alt="image" src="https://github.com/user-attachments/assets/4480dadc-b509-4bdd-b1ab-e75e24b39254" />
+
+- Threat Analytics
+  Comming Soon ......
+
 
 (Add screenshots here.)
 
