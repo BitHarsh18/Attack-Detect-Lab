@@ -288,7 +288,7 @@ GET /api/feeds/history
 ## Clone Repository
 
 ```bash
-git clone https://github.com/BitHarsh18/ThreatIntelPlatform.git
+git clone https://github.com/BitHarsh18/Attack-Detect-Lab
 ```
 
 ---
