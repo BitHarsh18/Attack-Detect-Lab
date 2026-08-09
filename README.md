@@ -7,7 +7,7 @@ A full-stack Threat Intelligence Platform built using the MERN stack to automate
 
 Website link : https://threatintel.store/
 
-## 📌 Overview
+## 📌 Project Overview 
 
 Security Operations Centers (SOCs) rely on threat intelligence feeds to identify malicious IP addresses, domains, URLs, and file hashes. Manually downloading and analyzing thousands of indicators is inefficient and time-consuming.
 
