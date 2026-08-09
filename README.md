@@ -1,3 +1,4 @@
+![Uploading d6a7ead8-5417-45ac-8e01-446dc945133e.png…]()
 # 🛡️ Threat Intelligence Platform (MERN Stack)
 
 A full-stack Threat Intelligence Platform built using the MERN stack to automate the collection, enrichment, storage, and analysis of real-world Indicators of Compromise (IOCs). The platform integrates threat intelligence feeds, provides an interactive SOC dashboard, and enables analysts to search and prioritize threats efficiently.
@@ -31,7 +32,7 @@ This project automates that workflow by:
   <img width="1658" height="525" alt="image" src="https://github.com/user-attachments/assets/47ab7d29-5921-4c1b-80f3-912d692db8e7" />
   
 - Threat Feed Status
-  <img width="1647" height="953" alt="image" src="https://github.com/user-attachments/assets/541220d2-b8be-4344-9ab9-592924ea5ccf" />
+  <img width="1648" height="954" alt="d6a7ead8-5417-45ac-8e01-446dc945133e" src="https://github.com/user-attachments/assets/6c444b8d-46a8-40a3-a729-bfb17290b909"/>
 
 - Feed Synchronization
   <img width="1322" height="455" alt="image" src="https://github.com/user-attachments/assets/17f800fe-48ed-43c7-9efb-eae9d4800afa" />
