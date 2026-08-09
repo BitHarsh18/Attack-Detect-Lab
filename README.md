@@ -35,7 +35,7 @@ This project automates that workflow by:
   <img width="1648" height="954" alt="d6a7ead8-5417-45ac-8e01-446dc945133e" src="https://github.com/user-attachments/assets/6c444b8d-46a8-40a3-a729-bfb17290b909"/>
 
 - Feed Synchronization
-  <img width="1322" height="455" alt="image" src="https://github.com/user-attachments/assets/17f800fe-48ed-43c7-9efb-eae9d4800afa" />
+ <img width="1645" height="497" alt="image" src="https://github.com/user-attachments/assets/3f47922a-38bc-4643-957e-d481a70cb42e" />
 
 - Feed History
   <img width="1605" height="805" alt="image" src="https://github.com/user-attachments/assets/4480dadc-b509-4bdd-b1ab-e75e24b39254" />
