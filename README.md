@@ -123,7 +123,7 @@ The platform supports:
 ## 🏗️ Project Architecture
 
 ```
-                    URLHaus Feed
+                    URLHaus Feed/MalwareBazaar/OpenPhish
                           │
                           ▼
                   Feed Manager
@@ -361,9 +361,7 @@ MONGO_URI=your_mongodb_connection_string
 
 # 🚀 Future Improvements
 
-- MalwareBazaar Integration
 - AlienVault OTX Integration
-- OpenPhish Integration
 - IOC Detail Page
 - MITRE ATT&CK Mapping
 - IOC Relationship Graph
